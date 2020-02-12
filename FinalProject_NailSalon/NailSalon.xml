@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NailSalon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employees>
+	<Employee>
+		<EmployeeID>E1</EmployeeID>
+		<FirstName>Terri</FirstName>
+		<LastName>Jimenez</LastName>
+		<PhoneNumber>505-279-8777</PhoneNumber>
+		<Email>TerriAJimenez@teleworm.us</Email>
+		<Address>3548 Byrd Lane House, NM 88121</Address>
+	</Employee>
+	<Employee>
+		<EmployeeID>E2</EmployeeID>
+		<FirstName>Sylvia </FirstName>
+		<LastName>Minnick</LastName>
+		<PhoneNumber> 213-923-0017</PhoneNumber>
+		<Email>eunice2017@gmail.com</Email>
+		<Address> Mira Loma, California(CA), 91752</Address>
+	</Employee>
+	<Employee>
+		<EmployeeID>E3</EmployeeID>
+		<FirstName>Opal</FirstName>
+		<LastName>Ireland</LastName>
+		<PhoneNumber>781-892-2074</PhoneNumber>
+		<Email>shakira_ter@yahoo.com</Email>
+		<Address>Burlington, Massachusetts(MA), 01803</Address>
+	</Employee>
+	<Employee>
+		<EmployeeID>E4</EmployeeID>
+		<FirstName>Linda</FirstName>
+		<LastName>Jusino</LastName>
+		<PhoneNumber>260-281-3591</PhoneNumber>
+		<Email>cheyanne_ber@gmail.com</Email>
+		<Address>Corunna, Indiana(IN), 46730</Address>
+	</Employee>
+	<Employee>
+		<EmployeeID>E5</EmployeeID>
+		<FirstName>Lila</FirstName>
+		<LastName>Jordan</LastName>
+		<PhoneNumber>702-328-1030</PhoneNumber>
+		<Email>sigrid1977@yahoo.com</Email>
+		<Address>Las Vegas, Nevada(NV), 89101</Address>
+	</Employee>
+   </Employees>
+  <Services>
+	<Service>
+		<ServiceID>S1</ServiceID>
+		<ServiceName>Pedicure</ServiceName>
+		<ServicePrice>30.00</ServicePrice>
+		<ServiceMinutes>45</ServiceMinutes>
+	</Service>
+	<Service>
+		<ServiceID>S2</ServiceID>
+		<ServiceName>Medicure</ServiceName>
+		<ServicePrice>20.00</ServicePrice>
+		<ServiceMinutes>45</ServiceMinutes>
+	</Service>
+	<Service>
+		<ServiceID>S3</ServiceID>
+		<ServiceName>Eyelash</ServiceName>
+		<ServicePrice>70.00</ServicePrice>
+		<ServiceMinutes>60</ServiceMinutes>
+	</Service>
+	<Service>
+		<ServiceID>S4</ServiceID>
+		<ServiceName>Shellac Pedicure</ServiceName>
+		<ServicePrice>45.00</ServicePrice>
+		<ServiceMinutes>30</ServiceMinutes>
+	</Service>
+	<Service>
+		<ServiceID>S5</ServiceID>
+		<ServiceName>Shellac Medicure</ServiceName>
+		<ServicePrice>35.00</ServicePrice>
+		<ServiceMinutes>30</ServiceMinutes>
+	</Service>
+	<Service>
+		<ServiceID>S6</ServiceID>
+		<ServiceName>Powder Gel Full set</ServiceName>
+		<ServicePrice>40.00</ServicePrice>
+		<ServiceMinutes>60</ServiceMinutes>
+	</Service>
+	<Service>
+		<ServiceID>S7</ServiceID>
+		<ServiceName>Bio-Gel Full Set</ServiceName>
+		<ServicePrice>55.00</ServicePrice>
+		<ServiceMinutes>60</ServiceMinutes>
+	</Service>
+  </Services>
+  <Customers>
+	<Customer>
+		<CustomerID>C1</CustomerID>
+		<FirstName>Michelle</FirstName>
+		<LastName>Olson</LastName>
+		<PhoneNumber>765-544-2977</PhoneNumber>
+		<Email>DorothyJOlson@teleworm.us</Email>
+		<Address>3579 Capitol Avenue Shelbyville, IN 46176</Address>
+	</Customer>
+	<Customer>
+		<CustomerID>C2</CustomerID>
+		<FirstName>Windy</FirstName>
+		<LastName>smith</LastName>
+		<PhoneNumber>641-231-8569</PhoneNumber>
+		<Email>DorothyJOlson@teleworm.us</Email>
+		<Address>3579 Capitol Avenue Shelbyville, IN 46176</Address>
+	</Customer>
+	<Customer>
+		<CustomerID>C3</CustomerID>
+		<FirstName>Sarah </FirstName>
+		<LastName>Coy</LastName>
+		<PhoneNumber>415-589-2429</PhoneNumber>
+		<Email>myrtle2002@yahoo.com</Email>
+		<Address>San Francisco, California(CA), 94103</Address>
+	</Customer>
+	<Customer>
+		<CustomerID>C4</CustomerID>
+		<FirstName>Lois  </FirstName>
+		<LastName>Atkinson</LastName>
+		<PhoneNumber>571-527-5801</PhoneNumber>
+		<Email>zackary2008@gmail.com</Email>
+		<Address>Alexandria, Virginia(VA), 22304</Address>
+	</Customer>
+  </Customers>
+  <Appointments>
+	<Appointment>
+		<AppointmentID>A1</AppointmentID>
+		<DateTime>2019-12-01 09:00 AM</DateTime>
+		<Customer>
+			<CustomerID>C1</CustomerID>
+			<FirstName>Michelle</FirstName>
+			<LastName>Olson</LastName>
+			<PhoneNumber>765-544-2977</PhoneNumber>
+			<Email>DorothyJOlson@teleworm.us</Email>
+			<Address>3579 Capitol Avenue Shelbyville, IN 46176</Address>
+		</Customer>
+		<Service>
+			<ServiceID>S1</ServiceID>
+			<ServiceName>Pedicure</ServiceName>
+			<ServicePrice>30.00</ServicePrice>
+			<ServiceMinutes>45</ServiceMinutes>
+		</Service>
+		<Employee>
+			<EmployeeID>E1</EmployeeID>
+			<FirstName>Terri</FirstName>
+			<LastName>Jimenez</LastName>
+			<PhoneNumber>505-279-8777</PhoneNumber>
+			<Email>TerriAJimenez@teleworm.us</Email>
+			<Address>3548 Byrd Lane House, NM 88121</Address>
+		</Employee>
+	</Appointment>
+	<Appointment>
+		<AppointmentID>A2</AppointmentID>
+		<DateTime>2019-12-03 10:00 AM</DateTime>
+		<Customer>
+			<CustomerID>C2</CustomerID>
+			<FirstName>Windy</FirstName>
+			<LastName>smith</LastName>
+			<PhoneNumber>641-231-8569</PhoneNumber>
+			<Email>DorothyJOlson@teleworm.us</Email>
+			<Address>3579 Capitol Avenue Shelbyville, IN 46176</Address>
+		</Customer>
+		<Service>
+			<ServiceID>S2</ServiceID>
+			<ServiceName>Medicure</ServiceName>
+			<ServicePrice>30.00</ServicePrice>
+			<ServiceMinutes>45</ServiceMinutes>
+		</Service>
+		<Employee>
+			<EmployeeID>E1</EmployeeID>
+			<FirstName>Terri</FirstName>
+			<LastName>Jimenez</LastName>
+			<PhoneNumber>505-279-8777</PhoneNumber>
+			<Email>TerriAJimenez@teleworm.us</Email>
+			<Address>3548 Byrd Lane House, NM 88121</Address>
+		</Employee>
+	</Appointment>
+	<Appointment>
+		<AppointmentID>A3</AppointmentID>
+		<DateTime>2019-12-03 09:00 AM</DateTime>
+		<Customer>
+			<CustomerID>C3</CustomerID>
+			<FirstName>Sarah </FirstName>
+			<LastName>Coy</LastName>
+			<PhoneNumber>415-589-2429</PhoneNumber>
+			<Email>myrtle2002@yahoo.com</Email>
+			<Address>San Francisco, California(CA), 94103</Address>
+		</Customer>
+		<Service>
+			<ServiceID>S2</ServiceID>
+			<ServiceName>Medicure</ServiceName>
+			<ServicePrice>30.00</ServicePrice>
+			<ServiceMinutes>45</ServiceMinutes>
+		</Service>
+		<Employee>
+			<EmployeeID>E1</EmployeeID>
+			<FirstName>Terri</FirstName>
+			<LastName>Jimenez</LastName>
+			<PhoneNumber>505-279-8777</PhoneNumber>
+			<Email>TerriAJimenez@teleworm.us</Email>
+			<Address>3548 Byrd Lane House, NM 88121</Address>
+		</Employee>
+	</Appointment>
+	<Appointment>
+		<AppointmentID>A4</AppointmentID>
+		<DateTime>2019-12-12 09:00 AM</DateTime>
+		<Customer>
+			<CustomerID>C4</CustomerID>
+			<FirstName>Lois  </FirstName>
+			<LastName>Atkinson</LastName>
+			<PhoneNumber>571-527-5801</PhoneNumber>
+			<Email>zackary2008@gmail.com</Email>
+			<Address>Alexandria, Virginia(VA), 22304</Address>
+		</Customer>
+		<Service>
+			<ServiceID>S2</ServiceID>
+			<ServiceName>Medicure</ServiceName>
+			<ServicePrice>30.00</ServicePrice>
+			<ServiceMinutes>45</ServiceMinutes>
+		</Service>
+		<Employee>
+			<EmployeeID>E1</EmployeeID>
+			<FirstName>Terri</FirstName>
+			<LastName>Jimenez</LastName>
+			<PhoneNumber>505-279-8777</PhoneNumber>
+			<Email>TerriAJimenez@teleworm.us</Email>
+			<Address>3548 Byrd Lane House, NM 88121</Address>
+		</Employee>
+	</Appointment>
+  </Appointments>
+</NailSalon>

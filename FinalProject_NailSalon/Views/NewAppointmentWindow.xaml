@@ -1,0 +1,132 @@
+﻿<Window x:Class="FinalProject_NailSalon.Views.NewAppointmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:FinalProject_NailSalon.Views"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Appointment Information" Height="550" Width="400">
+    <Border Padding="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Row="0">
+                <Label Content="Customer Information" FontWeight="Bold"/>
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="First Name*:" Grid.Column="0"/>
+                    <TextBox x:Name="tbFirstName" 
+                                       Text="{Binding Customer.FirstName}"
+                                       Padding="5"
+                                       Grid.Column="1"
+                                        Margin="5,0,0,0"/>
+                </Grid >
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Last Name*:" Grid.Column="0"/>
+                    <TextBox x:Name="tbLastName" 
+                                        Text="{Binding Customer.LastName}"
+                                       Padding="5"
+                                       Grid.Column="1" Margin="5,0,0,0"/>
+                </Grid>
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Phone Number*:" Grid.Column="0"/>
+                    <TextBox x:Name="tbPhoneNumber" 
+                                       Text="{Binding Customer.PhoneNumber}"
+                                       Padding="5"
+                                       Grid.Column="1" Margin="5,0,0,0"/>
+                </Grid>
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Email:" Grid.Column="0"/>
+                    <TextBox x:Name="tbEmail" 
+                                       Text="{Binding Customer.Email}"
+                                       Padding="5"
+                                       Grid.Column="1" Margin="5,0,0,0"/>
+                </Grid>
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Address:" Grid.Column="0"/>
+                    <TextBox x:Name="tbAddress" 
+                                       Text="{Binding Customer.Address}"
+                                       Padding="5"
+                                       Grid.Column="1" Margin="5,0,0,0"/>
+                </Grid>
+                <Label Content="Appointment Information" FontWeight="Bold"/>
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Date*:" Grid.Column="0"/>
+                    <DatePicker x:Name="dpCurrentDate" Grid.Column="1" Margin="5,0,0,0" SelectedDate="{x:Static sys:DateTime.Now}" SelectedDateChanged="DpCurrentDate_SelectedDateChanged" CalendarOpened="DpCurrentDate_CalendarOpened">
+                        <DatePicker.Resources>
+                            <Style TargetType="DatePickerTextBox">
+                                <Setter Property="Control.Template">
+                                    <Setter.Value>
+                                        <ControlTemplate>
+                                            <TextBox
+     Text="{Binding Path=SelectedDate, StringFormat = {}{0:dddd MMMM dd\,yyyy}, 
+     RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </DatePicker.Resources>
+                    </DatePicker>
+                </Grid>
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Time*:" Grid.Column="0"/>
+                    <ComboBox x:Name="cbTime" Grid.Column="1" Margin="5,0,0,0" ItemsSource="{Binding WorkingHours}" ItemStringFormat="hh:mm tt"/>
+                </Grid>
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Service*:" Grid.Column="0"/>
+                    <ComboBox x:Name="cbService" Grid.Column="1" Margin="5,0,0,0"
+                              ItemsSource="{Binding Services}"/>
+                </Grid>
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Technician*:" Grid.Column="0"/>
+                    <ComboBox x:Name="cbNailTechnician" Grid.Column="1" Margin="5,0,0,0"
+                              ItemsSource="{Binding Employees}"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btnOk" Content="Ok" Width="100" Height="30" Click="BtnOk_Click"/>
+                <Button x:Name="btnCancel" IsCancel="True" Content="Cancel" Width="100" Height="30" Margin="20,0,0,0" Click="BtnCancel_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
+    
